@@ -1,4 +1,4 @@
-Repositorio GitHub: https://github.com/jbenalcazar/Actividad3-MercApp
+Repositorio GitHub: https://github.com/jbenalcazarm1/MercApp
 
 Nota: Este archivo contiene la URL del repositorio de GitHub donde se encuentra el código fuente completo del proyecto MercApp.
 
