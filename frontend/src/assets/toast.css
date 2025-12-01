@@ -1,6 +1,6 @@
 /* Custom styles for vue-toastification */
 .Vue-Toastification__toast {
-  @apply glass-card border border-white/20 !important;
+  @apply bg-white/5 backdrop-blur-md border border-white/20 rounded-xl shadow-glass !important;
   background: rgba(15, 23, 42, 0.95) !important;
   backdrop-filter: blur(12px) !important;
   padding: 1rem !important;
