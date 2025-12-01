@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercApp - Documentación del Proyecto</title>
+    <meta name="description" content="Documentación técnica del proyecto MercApp - SPA con Vue 3 y API REST">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="icon">🛒</span>
+                    MercApp
+                </h1>
+                <p class="subtitle">Catálogo de Productos - Single Page Application</p>
+            </div>
+        </header>
+
+        <!-- Información del Estudiante -->
+        <section class="card">
+            <h2 class="section-title">👨‍🎓 Información del Estudiante</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Nombre:</strong>
+                    <span>Julián Benalcázar</span>
+                </div>
+                <div class="info-item">
+                    <strong>Universidad:</strong>
+                    <span>Universidad Politécnica Salesiana</span>
+                </div>
+                <div class="info-item">
+                    <strong>Materia:</strong>
+                    <span>Aplicaciones Web</span>
+                </div>
+                <div class="info-item">
+                    <strong>Actividad:</strong>
+                    <span>Unidad 4 - Despliegue y Publicación</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces de Despliegue -->
+        <section class="card">
+            <h2 class="section-title">🚀 Aplicación Desplegada</h2>
+            <div class="deploy-links">
+                <a href="#" class="deploy-link frontend" id="netlify-link">
+                    <div class="link-icon">🌐</div>
+                    <div class="link-content">
+                        <h3>Frontend (Netlify)</h3>
+                        <p>Aplicación Vue 3 en producción</p>
+                        <span class="link-url">Pendiente de despliegue</span>
+                    </div>
+                </a>
+                <a href="#" class="deploy-link backend" id="railway-link">
+                    <div class="link-icon">⚡</div>
+                    <div class="link-content">
+                        <h3>Backend API (Railway)</h3>
+                        <p>API REST con Node.js y Express</p>
+                        <span class="link-url">Pendiente de despliegue</span>
+                    </div>
+                </a>
+                <a href="https://github.com/jbenalcazarm1/MercApp" class="deploy-link github" target="_blank">
+                    <div class="link-icon">📦</div>
+                    <div class="link-content">
+                        <h3>Repositorio GitHub</h3>
+                        <p>Código fuente completo</p>
+                        <span class="link-url">github.com/jbenalcazarm1/MercApp</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Arquitectura -->
+        <section class="card">
+            <h2 class="section-title">🏗️ Arquitectura de Despliegue</h2>
+            <div class="architecture">
+                <div class="arch-component">
+                    <div class="arch-header netlify-bg">
+                        <h3>Frontend - Netlify</h3>
+                    </div>
+                    <ul class="arch-list">
+                        <li>Vue 3 (Composition API)</li>
+                        <li>Vue Router 4</li>
+                        <li>Pinia (State Management)</li>
+                        <li>Tailwind CSS</li>
+                        <li>Vite Build Tool</li>
+                    </ul>
+                </div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-component">
+                    <div class="arch-header railway-bg">
+                        <h3>Backend - Railway</h3>
+                    </div>
+                    <ul class="arch-list">
+                        <li>Node.js + Express</li>
+                        <li>API REST</li>
+                        <li>CORS configurado</li>
+                        <li>Validación de datos</li>
+                        <li>Manejo de errores</li>
+                    </ul>
+                </div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-component">
+                    <div class="arch-header atlas-bg">
+                        <h3>Database - MongoDB Atlas</h3>
+                    </div>
+                    <ul class="arch-list">
+                        <li>Cluster M0 (gratuito)</li>
+                        <li>Mongoose ODM</li>
+                        <li>Modelos: Product, Category</li>
+                        <li>Conexión TLS</li>
+                        <li>IP Allowlist configurada</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section class="card">
+            <h2 class="section-title">✨ Características Implementadas</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🔍 Frontend Vue 3</h3>
+                    <ul>
+                        <li>SPA con routing dinámico</li>
+                        <li>Búsqueda y filtros de productos</li>
+                        <li>Carrito de compras persistente</li>
+                        <li>Lazy loading de vistas</li>
+                        <li>Diseño responsive</li>
+                        <li>Animaciones suaves</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3>⚙️ Backend API REST</h3>
+                    <ul>
+                        <li>CRUD completo de productos</li>
+                        <li>Listado de categorías</li>
+                        <li>Búsqueda y filtros</li>
+                        <li>Validación de datos</li>
+                        <li>Manejo de errores</li>
+                        <li>Endpoint de salud (/health)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Endpoints -->
+        <section class="card">
+            <h2 class="section-title">📡 API Endpoints</h2>
+            <div class="endpoints">
+                <div class="endpoint-group">
+                    <h3 class="endpoint-group-title">Productos</h3>
+                    <div class="endpoint">
+                        <span class="method get">GET</span>
+                        <code>/api/products</code>
+                        <span class="endpoint-desc">Listar todos los productos (con filtros opcionales: ?search=texto&category=id)</span>
+                    </div>
+                    <div class="endpoint">
+                        <span class="method get">GET</span>
+                        <code>/api/products/:id</code>
+                        <span class="endpoint-desc">Obtener un producto por ID</span>
+                    </div>
+                    <div class="endpoint">
+                        <span class="method post">POST</span>
+                        <code>/api/products</code>
+                        <span class="endpoint-desc">Crear un nuevo producto</span>
+                    </div>
+                    <div class="endpoint">
+                        <span class="method put">PUT</span>
+                        <code>/api/products/:id</code>
+                        <span class="endpoint-desc">Actualizar un producto completo</span>
+                    </div>
+                    <div class="endpoint">
+                        <span class="method delete">DELETE</span>
+                        <code>/api/products/:id</code>
+                        <span class="endpoint-desc">Eliminar un producto</span>
+                    </div>
+                </div>
+
+                <div class="endpoint-group">
+                    <h3 class="endpoint-group-title">Categorías</h3>
+                    <div class="endpoint">
+                        <span class="method get">GET</span>
+                        <code>/api/categories</code>
+                        <span class="endpoint-desc">Listar todas las categorías</span>
+                    </div>
+                    <div class="endpoint">
+                        <span class="method get">GET</span>
+                        <code>/api/categories/:id</code>
+                        <span class="endpoint-desc">Obtener una categoría por ID</span>
+                    </div>
+                </div>
+
+                <div class="endpoint-group">
+                    <h3 class="endpoint-group-title">Sistema</h3>
+                    <div class="endpoint">
+                        <span class="method get">GET</span>
+                        <code>/health</code>
+                        <span class="endpoint-desc">Verificar estado del servidor y base de datos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h4>Ejemplo de Respuesta (GET /api/products)</h4>
+                <pre><code>{
+  "success": true,
+  "count": 12,
+  "data": [
+    {
+      "_id": "...",
+      "name": "Laptop Dell XPS 13",
+      "description": "Laptop ultradelgada...",
+      "price": 1299.99,
+      "stock": 15,
+      "featured": true,
+      "image": "https://...",
+      "category": {
+        "_id": "...",
+        "name": "Electrónica",
+        "icon": "💻"
+      },
+      "createdAt": "2025-01-15T...",
+      "updatedAt": "2025-01-15T..."
+    }
+  ]
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Instalación Local -->
+        <section class="card">
+            <h2 class="section-title">💻 Ejecución Local</h2>
+            
+            <div class="install-section">
+                <h3>Prerrequisitos</h3>
+                <ul>
+                    <li>Node.js 18+ y npm</li>
+                    <li>MongoDB (local o Atlas)</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+
+            <div class="install-section">
+                <h3>1. Clonar el repositorio</h3>
+                <pre><code>git clone https://github.com/jbenalcazarm1/MercApp.git
+cd MercApp</code></pre>
+            </div>
+
+            <div class="install-section">
+                <h3>2. Backend</h3>
+                <pre><code>cd backend
+npm install
+cp .env.example .env
+# Editar .env con tu MONGO_URI
+npm run seed
+npm run dev</code></pre>
+                <p>El servidor estará en <code>http://localhost:8000</code></p>
+            </div>
+
+            <div class="install-section">
+                <h3>3. Frontend</h3>
+                <pre><code>cd ../frontend
+npm install
+cp .env.example .env
+# Editar .env si es necesario
+npm run dev</code></pre>
+                <p>La aplicación estará en <code>http://localhost:5173</code></p>
+            </div>
+        </section>
+
+        <!-- Tecnologías -->
+        <section class="card">
+            <h2 class="section-title">🛠️ Stack Tecnológico</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <span class="tech-badge vue">Vue 3</span>
+                    <span class="tech-badge">Vue Router</span>
+                    <span class="tech-badge">Pinia</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge node">Node.js</span>
+                    <span class="tech-badge">Express</span>
+                    <span class="tech-badge">Mongoose</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge">Axios</span>
+                    <span class="tech-badge">Vite</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge mongo">MongoDB</span>
+                    <span class="tech-badge netlify">Netlify</span>
+                    <span class="tech-badge railway">Railway</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Desarrollado con ❤️ por Julián Benalcázar - Universidad Politécnica Salesiana - 2025</p>
+            <p>Proyecto académico - Aplicaciones Web - Unidad 4</p>
+        </footer>
+    </div>
+
+    <script>
+        // Actualizar estos valores después del despliegue
+        const NETLIFY_URL = 'Pendiente de despliegue';
+        const RAILWAY_URL = 'Pendiente de despliegue';
+
+        // Función para actualizar los enlaces cuando estén disponibles
+        function updateDeployLinks() {
+            if (NETLIFY_URL !== 'Pendiente de despliegue') {
+                const netlifyLink = document.getElementById('netlify-link');
+                netlifyLink.href = NETLIFY_URL;
+                netlifyLink.querySelector('.link-url').textContent = NETLIFY_URL.replace('https://', '');
+            }
+            
+            if (RAILWAY_URL !== 'Pendiente de despliegue') {
+                const railwayLink = document.getElementById('railway-link');
+                railwayLink.href = RAILWAY_URL;
+                railwayLink.querySelector('.link-url').textContent = RAILWAY_URL.replace('https://', '');
+            }
+        }
+
+        updateDeployLinks();
+    </script>
+</body>
+</html>

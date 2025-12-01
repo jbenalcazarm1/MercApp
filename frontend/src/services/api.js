@@ -1,8 +1,11 @@
 // src/services/api.js
 import axios from "axios";
 
+// En producción usará la URL de Railway, en desarrollo usará el proxy de Vite
+const baseURL = import.meta.env.VITE_API_URL || "/api";
+
 const api = axios.create({
-  baseURL: "/api",
+  baseURL,
   headers: {
     "Content-Type": "application/json",
   },

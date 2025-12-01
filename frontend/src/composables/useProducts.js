@@ -23,7 +23,8 @@ export function useProducts() {
 
     try {
       const result = await execute(url);
-      products.value = result || [];
+      // La API devuelve { success: true, data: [...] }
+      products.value = result?.data || [];
       return result;
     } catch (err) {
       console.error("Error fetching products:", err);
@@ -35,7 +36,8 @@ export function useProducts() {
   const fetchProductById = async (id) => {
     try {
       const result = await execute(`/products/${id}`);
-      return result;
+      // Para un solo producto, la API devuelve { success: true, data: {...} }
+      return result?.data;
     } catch (err) {
       console.error("Error fetching product:", err);
       throw err;
@@ -45,7 +47,8 @@ export function useProducts() {
   const fetchCategories = async () => {
     try {
       const result = await execute("/categories");
-      categories.value = result || [];
+      // La API devuelve { success: true, data: [...] }
+      categories.value = result?.data || [];
       return result;
     } catch (err) {
       console.error("Error fetching categories:", err);
